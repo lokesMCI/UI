@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+  }
+  
+  .balance-toggle {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .balance-toggle input {
+    margin-right: 10px;
+  }
+  
+  .logo img {
+    height: 30px;
+  }
+  
