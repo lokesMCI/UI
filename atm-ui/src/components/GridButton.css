@@ -1,0 +1,56 @@
+.grid-button {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .grid-button.green {
+    background-color: #8bc34a;
+    color: white;
+  }
+  
+  .grid-button.black {
+    background-color: #333;
+    color: white;
+  }
+  
+  .grid-button.image {
+    grid-column: span 2;
+    background-color: #444;
+    color: white;
+    background-image: url('checks-background.jpg'), linear-gradient(to bottom, #444, #666);
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+  
+  .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    margin-bottom: 5px;
+  }
+  
+  .additional {
+    font-size: 14px;
+  }
+  
+  .order-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
