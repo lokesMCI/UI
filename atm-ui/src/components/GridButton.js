@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./GridButton.css";
 
 const GridButton = ({
@@ -7,13 +8,21 @@ const GridButton = ({
   description,
   additional,
   isImage,
+  route,
   children,
 }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (route) {
+      navigate(route);
+    } else {
+      alert(`${title || "Button"} clicked!`);
+    }
+  };
+
   return (
-    <button
-      className={`grid-button ${type}`}
-      onClick={() => alert(`${title || "Button"} clicked!`)}
-    >
+    <button className={`grid-button ${type}`} onClick={handleClick}>
       {isImage ? (
         children
       ) : (

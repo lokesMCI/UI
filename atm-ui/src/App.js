@@ -1,12 +1,17 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header";
 import GridButton from "./components/GridButton";
 import Footer from "./components/footer";
+import CheckBalance from "./components/CheckBalance";
+import UpdatePin from "./components/UpdatePin";
+import SetLimit from "./components/SetLimit";
+import PinInput from "./components/PinInput";
 
-function App() {
+function Home() {
   return (
-    <div className="container">
+    <>
       <Header />
       <div className="grid-container">
         <GridButton
@@ -24,6 +29,9 @@ function App() {
         <GridButton type="black" title="Get Cash" />
         <GridButton type="black" title="Deposit Checks" />
         <GridButton type="black" title="Make Payment" />
+        <GridButton type="black" title="Check Balance" route="/check-balance" />
+        <GridButton type="black" title="Update PIN" route="/update-pin" />
+        <GridButton type="black" title="Set Limit" route="/set-limit" />
         <GridButton type="image" isImage>
           <p>
             We noticed you moved.
@@ -40,7 +48,21 @@ function App() {
         />
       </div>
       <Footer />
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<PinInput />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/check-balance" element={<CheckBalance />} />
+        <Route path="/update-pin" element={<UpdatePin />} />
+        <Route path="/set-limit" element={<SetLimit />} />
+      </Routes>
+    </Router>
   );
 }
 

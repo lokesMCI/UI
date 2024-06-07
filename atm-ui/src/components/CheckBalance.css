@@ -1,0 +1,23 @@
+.check-balance {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .check-balance h2 {
+    font-size: 24px;
+  }
+  
+  .check-balance p {
+    font-size: 18px;
+  }
+  
+  .check-balance button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  

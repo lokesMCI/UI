@@ -1,0 +1,40 @@
+.pin-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .pin-input-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .pin-display {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .pin-char {
+    font-size: 36px;
+    margin: 0 5px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .grid-button.pin-button {
+    padding: 20px;
+    font-size: 24px;
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    text-align: center;
+  }
+  
